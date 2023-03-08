@@ -1,0 +1,9 @@
+Default restart policy of pod is Always.
+
+nodeName=<nodename> nodename to be defined if particular node a pod to be scheduled.
+
+scheduler is responsible for scheduling a pod to node. If no scheduler running,the pod will be in pending state.
+
+scheduler manifest file is available in the /etc/kubernetes/manifests folder.
+
+
