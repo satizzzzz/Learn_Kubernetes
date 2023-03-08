@@ -1,9 +1,16 @@
-Default restart policy of pod is Always.
 
-nodeName=<nodename> nodename to be defined if particular node a pod to be scheduled.
+**Default restart policy of pod is Always.
 
-scheduler is responsible for scheduling a pod to node. If no scheduler running,the pod will be in pending state.
+**nodeName=<nodename> nodename to be defined if particular node a pod to be scheduled.
 
-scheduler manifest file is available in the /etc/kubernetes/manifests folder.
+**scheduler is responsible for scheduling a pod to node. If no scheduler running,the pod will be in pending state.
 
+**scheduler manifest file is available in the /etc/kubernetes/manifests folder.
+
+**Node Selector used to achieve single label not for complex conditions like place in size large or medium not in small nodes
+
+**Taints(Nodes) and Tolerations(pods) set restrictions on which pods to be scheduled in the nodes
+	* NoSchedule
+	* PreferNoSchedule
+	* NoExectute
 
