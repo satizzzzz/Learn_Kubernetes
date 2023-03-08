@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: busybox-pod
+  name: busybox-pod
+spec:
+  containers:
+  - command:
+    - sleep
+    - "100"
+    image: busybox
+    name: busybox-pod
+  restartPolicy: Never
+  nodeName: ip-172-31-42-241
